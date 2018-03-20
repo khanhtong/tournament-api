@@ -1,4 +1,4 @@
 class Tournament < ApplicationRecord
-  has_many :groups
+  has_many :groups, dependent: :destroy
   validates_presence_of :name
 end
